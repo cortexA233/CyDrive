@@ -5,13 +5,14 @@ import client_config as cfg
 
 
 class User:
-    def __init__(self, user_id=-1, username='', password='', work_dir='', root_dir='', remote_dir=''):
+    def __init__(self, user_id=-1, username='', password='', work_dir='', root_dir='download', remote_dir=''):
         self.user_id = user_id
         self.username = username
         self.password = password
         self.work_dir = work_dir
         self.root_dir = root_dir
         self.remote_dir = remote_dir
+        self.cookie = ''
 
     def print(self):
         print(self.username)
